@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+img {
+  display: block;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  line-height: 1;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+/* Our Navigation */
+nav {
+  background: url('../images/two-color.svg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* Float Clear */
+  overflow: hidden;
+}
+
+/* We set the max width here */
+nav ul {
+  max-width: 67em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Li width is 100/6 */
+nav li {
+  display: block;
+  float: left;
+  width: 16.6666666667%;
+}
+
+/* Odd li's are blue */
+nav ul li:nth-child(odd) {
+  background-color: #0097D6;
+}
+
+/* Even li's are gray */
+nav ul li:nth-child(even) {
+  background: #333;
+}
+
+nav a {
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 4.375em 0 1em 0;
+  background-repeat: no-repeat;
+  background-size: 2.8em 2.8em;
+  background-position: center 1em;
+  /* CSS3 Transition */
+  transition: .3s;
+}
+
+nav a:hover { 
+  /* Translucent rgba for hover effect */    
+  background-color: rgba(255,255,255,.1);
+}
+
+/* SVG Icon Assigning */
+#accounting a {
+  background-image: url('../images/calculator.svg');
+}
+
+#settings a {
+  background-image: url('../images/gear.svg');
+}
+
+#cloud a {
+  background-image: url('../images/cloud.svg');
+}
+
+#payroll a {
+  background-image: url('../images/clock.svg');
+}
+
+#newsletter a {
+  background-image: url('../images/mail.svg');
+}
+
+#portal a {
+  background-image: url('../images/lock.svg');
+}
